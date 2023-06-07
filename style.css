@@ -7,6 +7,80 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* Add styles here! */
+
+:root {
+  --clr-primary: hsl(160deg, 100%, 30%);
+  --clr-secondary-500: hsl(45deg, 100%, 50%);
+  --clr-secondary-400: hsl(45deg, 100%, 40%);
+
+  --clr-neutral-000: hsl(0deg, 0%, 0%);
+  --clr-neutral-100: hsl(0deg, 0%, 10%);
+  --clr-neutral-300: hsl(0deg, 0%, 30%);
+  --clr-neutral-400: hsl(0deg, 0%, 40%);
+  --clr-neutral-600: hsl(0deg, 0%, 60%);
+  --clr-neutral-100: hsl(0deg, 0%, 100%);
+
+
+  font-size: 18px;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.intro-chunk {
+  padding-top: 4rem;
+  max-width: 400px;
+  padding-bottom: 1.25rem;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
+
+strong {
+  color: var(--clr-primary)
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+main {
+  background-color: var(--clr-neutral-600);
+  min-height: 25%;
+  padding: 32px 0;
+  border-top: 0.5rem var(--clr-neutral-400) solid;
+}
+
+.card {
+  background-color: var(--clr-neutral-100);
+  border-bottom: 0.5rem var(--clr-neutral-400) solid;
+  padding: 24px;
+  margin-left: -24px;
+}
+
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.indented-heading {
+  background-color: var(--clr-secondary-500);
+  padding: 16px 32px;
+  width: fit-content;
+  margin-left: -32px;
+  border-bottom: 0.5rem var(--clr-secondary-400) solid;
+  margin-top: 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
